@@ -8,6 +8,12 @@ const Shop = () => {
         <div>
            <h1>this is shop</h1>
            <h3>{products.length}</h3> 
+           <ul>
+           {
+               products.map(product =><li>{product.name}</li>)
+           }
+           </ul>
+
         </div>
     );
 };
